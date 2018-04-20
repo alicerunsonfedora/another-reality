@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8;IE=edge">
+  <title>Welcome</title>
+  <link rel="shortcut icon" href="https://appservice.azureedge.net/images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"> 
+  <style type="text/css">
+    html {
+      height: 100%;
+      width: 100%
+    }
+
+    .holder {
+      width: 100vw;
+      height: 100vh;
+      position: relative
+    }
+
+    .frame {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      overflow: hidden;
+    }
+
+    body {
+      background-color: #211746;
+      color: #fff;
+      font-family: 'Inconsolata', helvetica, sans-serif;
+      font-size: 2.7vmin;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .content {
+      position: absolute;
+      left: 3.8vw;
+      top: 5.5vh;
+      height: 30vh;
+      margin-right: 25%;
+    }
+
+    .content .azureLogo {
+      height: 30%;
+      width: 35%;
+      position: relative;
+      top: 0.3vmin;
+    }
+
+    .content .azureBrand {
+      margin: 0 0 6.5vh .2vh;
+      font-family: 'Inconsolata', helvetica, sans-serif;
+      font-size: 2.7vmin;
+    }
+
+    .content .bodyHeadline {
+      margin: 3.5vh 0 1vh 0;
+      font-size: 5.1vmin;
+    }
+
+    .content .bodyContent {
+      margin: 1.5vh 0 3.5vh 0;
+      font-family: 'Inconsolata', helvetica, sans-serif;
+      font-size: 2.7vmin;
+    }
+
+    .content .bodyContent a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .content .bodyContent a:hover {
+      opacity: .7;
+    }
+    
+    .submit-button {
+    margin-top: 2vmin;
+    color: #fff;
+    font-size: 3vmin;
+    font-family: Inconsolata;
+    border: none;
+    width: 15vmin;
+    cursor: pointer;
+    height: 6.5vmin;
+    background-color: #001580;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+      text-decoration-line: none;
+  }
+    
+    .monika {
+      margin-right: 32px;
+      margin-left: 75%;
+      margin-top: 32px;
+      width: 20%;
+    }
+    
+    footer {
+      margin-left: 3.8vw;
+      margin-bottom: 16px;
+    }
+    
+    a {
+      color: white;
+    }
+  </style>
+  <script type="text/javascript">
+    window.onload = function() {
+      try {
+        var a = window.location.hostname;
+        if (a.includes(".azurewebsites.net")) {
+          a = a.replace(".azurewebsites.net", "")
+        }
+        var b = document.getElementById("quickStartLink");
+        b.setAttribute("href", b.getAttribute("href") + "&sitename=" + a);
+      } catch (d) {}
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="https://appservice.azureedge.net/css/main.min.css">
+</head>
+
+<body>
+  <img src = "https://appservice.azureedge.net/images/clouds.svg" class = "monika">
+  <div class="content"> 
+  <a href = "http://www.heroku.com"><img class="azureLogo" src="built-on-heroku-light.svg"></a>
+    <div class="bodyHeadline">Dragons beware!</div>
+    <div class="bodyContent">
+      <p>
+        Welcome to the official website for the <b>Another Reality</b> visual novel project. You are currently looking at pre-release software, meaning that this isn't ready for full use. Some features may change or break every day.
+      </p>
+      <p>
+        If you like playing with software that isn't fully ready yet, feel free to try this game out. Otherwise, it's recommended that you wait until the game is out of the testing phases.
+      </p>
+    </div>
+    <a class = "submit-button" href="demo.html">Take me to the game &rsaquo;</a>
+  </div>
+  <footer>
+    <p>
+      (C) 2018 Marquis Kurt. All rights reserved. Email: <a href="mailto:webmaster@marquiskurt.net">webmaster@marquiskurt.net</a>
+    </p>
+  </footer>
+</body>
+
+</html>
